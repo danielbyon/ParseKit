@@ -1,0 +1,628 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		65971B671E22F7D6003D0AEC /* ParseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65971B5D1E22F7D6003D0AEC /* ParseKit.framework */; };
+		65971B6C1E22F7D6003D0AEC /* ParseKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65971B6B1E22F7D6003D0AEC /* ParseKitTests.swift */; };
+		65971B781E22F7EF003D0AEC /* ParseKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65971B771E22F7EF003D0AEC /* ParseKit.swift */; };
+		65FAA3F71E4C6EC3006A5EA9 /* ParseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65FAA3EE1E4C6EC3006A5EA9 /* ParseKit.framework */; };
+		65FAA4051E4C6ED0006A5EA9 /* ParseKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65971B6B1E22F7D6003D0AEC /* ParseKitTests.swift */; };
+		65FAA4061E4C6EDA006A5EA9 /* ParseKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65971B771E22F7EF003D0AEC /* ParseKit.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		65971B681E22F7D6003D0AEC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 65971B541E22F7D6003D0AEC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 65971B5C1E22F7D6003D0AEC;
+			remoteInfo = ParseKit;
+		};
+		65FAA3F81E4C6EC3006A5EA9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 65971B541E22F7D6003D0AEC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 65FAA3ED1E4C6EC3006A5EA9;
+			remoteInfo = "ParseKit-tvOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		65971B5D1E22F7D6003D0AEC /* ParseKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ParseKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		65971B611E22F7D6003D0AEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65971B661E22F7D6003D0AEC /* ParseKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ParseKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		65971B6B1E22F7D6003D0AEC /* ParseKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParseKitTests.swift; sourceTree = "<group>"; };
+		65971B6D1E22F7D6003D0AEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65971B771E22F7EF003D0AEC /* ParseKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseKit.swift; sourceTree = "<group>"; };
+		65FAA3EE1E4C6EC3006A5EA9 /* ParseKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ParseKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		65FAA3F61E4C6EC3006A5EA9 /* ParseKit-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ParseKit-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		65971B591E22F7D6003D0AEC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65971B631E22F7D6003D0AEC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65971B671E22F7D6003D0AEC /* ParseKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65FAA3EA1E4C6EC3006A5EA9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65FAA3F31E4C6EC3006A5EA9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65FAA3F71E4C6EC3006A5EA9 /* ParseKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		65971B531E22F7D6003D0AEC = {
+			isa = PBXGroup;
+			children = (
+				65971B5F1E22F7D6003D0AEC /* ParseKit */,
+				65971B6A1E22F7D6003D0AEC /* ParseKitTests */,
+				65971B5E1E22F7D6003D0AEC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		65971B5E1E22F7D6003D0AEC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				65971B5D1E22F7D6003D0AEC /* ParseKit.framework */,
+				65971B661E22F7D6003D0AEC /* ParseKitTests.xctest */,
+				65FAA3EE1E4C6EC3006A5EA9 /* ParseKit.framework */,
+				65FAA3F61E4C6EC3006A5EA9 /* ParseKit-tvOSTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		65971B5F1E22F7D6003D0AEC /* ParseKit */ = {
+			isa = PBXGroup;
+			children = (
+				65971B771E22F7EF003D0AEC /* ParseKit.swift */,
+				65971B611E22F7D6003D0AEC /* Info.plist */,
+			);
+			path = ParseKit;
+			sourceTree = "<group>";
+		};
+		65971B6A1E22F7D6003D0AEC /* ParseKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				65971B6B1E22F7D6003D0AEC /* ParseKitTests.swift */,
+				65971B6D1E22F7D6003D0AEC /* Info.plist */,
+			);
+			path = ParseKitTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		65971B5A1E22F7D6003D0AEC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65FAA3EB1E4C6EC3006A5EA9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		65971B5C1E22F7D6003D0AEC /* ParseKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 65971B711E22F7D6003D0AEC /* Build configuration list for PBXNativeTarget "ParseKit" */;
+			buildPhases = (
+				65971B581E22F7D6003D0AEC /* Sources */,
+				65971B591E22F7D6003D0AEC /* Frameworks */,
+				65971B5A1E22F7D6003D0AEC /* Headers */,
+				65971B5B1E22F7D6003D0AEC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ParseKit;
+			productName = ParseKit;
+			productReference = 65971B5D1E22F7D6003D0AEC /* ParseKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		65971B651E22F7D6003D0AEC /* ParseKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 65971B741E22F7D6003D0AEC /* Build configuration list for PBXNativeTarget "ParseKitTests" */;
+			buildPhases = (
+				65971B621E22F7D6003D0AEC /* Sources */,
+				65971B631E22F7D6003D0AEC /* Frameworks */,
+				65971B641E22F7D6003D0AEC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				65971B691E22F7D6003D0AEC /* PBXTargetDependency */,
+			);
+			name = ParseKitTests;
+			productName = ParseKitTests;
+			productReference = 65971B661E22F7D6003D0AEC /* ParseKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		65FAA3ED1E4C6EC3006A5EA9 /* ParseKit-tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 65FAA4031E4C6EC3006A5EA9 /* Build configuration list for PBXNativeTarget "ParseKit-tvOS" */;
+			buildPhases = (
+				65FAA3E91E4C6EC3006A5EA9 /* Sources */,
+				65FAA3EA1E4C6EC3006A5EA9 /* Frameworks */,
+				65FAA3EB1E4C6EC3006A5EA9 /* Headers */,
+				65FAA3EC1E4C6EC3006A5EA9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ParseKit-tvOS";
+			productName = "ParseKit-tvOS";
+			productReference = 65FAA3EE1E4C6EC3006A5EA9 /* ParseKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		65FAA3F51E4C6EC3006A5EA9 /* ParseKit-tvOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 65FAA4041E4C6EC3006A5EA9 /* Build configuration list for PBXNativeTarget "ParseKit-tvOSTests" */;
+			buildPhases = (
+				65FAA3F21E4C6EC3006A5EA9 /* Sources */,
+				65FAA3F31E4C6EC3006A5EA9 /* Frameworks */,
+				65FAA3F41E4C6EC3006A5EA9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				65FAA3F91E4C6EC3006A5EA9 /* PBXTargetDependency */,
+			);
+			name = "ParseKit-tvOSTests";
+			productName = "ParseKit-tvOSTests";
+			productReference = 65FAA3F61E4C6EC3006A5EA9 /* ParseKit-tvOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		65971B541E22F7D6003D0AEC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Daniel Byon";
+				TargetAttributes = {
+					65971B5C1E22F7D6003D0AEC = {
+						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 0820;
+						ProvisioningStyle = Automatic;
+					};
+					65971B651E22F7D6003D0AEC = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					65FAA3ED1E4C6EC3006A5EA9 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = HSX7X97PF8;
+						ProvisioningStyle = Automatic;
+					};
+					65FAA3F51E4C6EC3006A5EA9 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = HSX7X97PF8;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 65971B571E22F7D6003D0AEC /* Build configuration list for PBXProject "ParseKit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 65971B531E22F7D6003D0AEC;
+			productRefGroup = 65971B5E1E22F7D6003D0AEC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				65971B5C1E22F7D6003D0AEC /* ParseKit */,
+				65971B651E22F7D6003D0AEC /* ParseKitTests */,
+				65FAA3ED1E4C6EC3006A5EA9 /* ParseKit-tvOS */,
+				65FAA3F51E4C6EC3006A5EA9 /* ParseKit-tvOSTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		65971B5B1E22F7D6003D0AEC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65971B641E22F7D6003D0AEC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65FAA3EC1E4C6EC3006A5EA9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65FAA3F41E4C6EC3006A5EA9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		65971B581E22F7D6003D0AEC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65971B781E22F7EF003D0AEC /* ParseKit.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65971B621E22F7D6003D0AEC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65971B6C1E22F7D6003D0AEC /* ParseKitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65FAA3E91E4C6EC3006A5EA9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65FAA4061E4C6EDA006A5EA9 /* ParseKit.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65FAA3F21E4C6EC3006A5EA9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65FAA4051E4C6ED0006A5EA9 /* ParseKitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		65971B691E22F7D6003D0AEC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 65971B5C1E22F7D6003D0AEC /* ParseKit */;
+			targetProxy = 65971B681E22F7D6003D0AEC /* PBXContainerItemProxy */;
+		};
+		65FAA3F91E4C6EC3006A5EA9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 65FAA3ED1E4C6EC3006A5EA9 /* ParseKit-tvOS */;
+			targetProxy = 65FAA3F81E4C6EC3006A5EA9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		65971B6F1E22F7D6003D0AEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		65971B701E22F7D6003D0AEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		65971B721E22F7D6003D0AEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = ParseKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.danielbyon.ParseKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		65971B731E22F7D6003D0AEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = ParseKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.danielbyon.ParseKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		65971B751E22F7D6003D0AEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = ParseKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.danielbyon.ParseKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		65971B761E22F7D6003D0AEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = ParseKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.danielbyon.ParseKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		65FAA3FF1E4C6EC3006A5EA9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = HSX7X97PF8;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = ParseKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.danielbyon.ParseKit-tvOS";
+				PRODUCT_NAME = ParseKit;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.1;
+			};
+			name = Debug;
+		};
+		65FAA4001E4C6EC3006A5EA9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = HSX7X97PF8;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = ParseKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.danielbyon.ParseKit-tvOS";
+				PRODUCT_NAME = ParseKit;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.1;
+			};
+			name = Release;
+		};
+		65FAA4011E4C6EC3006A5EA9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = HSX7X97PF8;
+				INFOPLIST_FILE = ParseKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.danielbyon.ParseKit-tvOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 3.0;
+				TVOS_DEPLOYMENT_TARGET = 10.1;
+			};
+			name = Debug;
+		};
+		65FAA4021E4C6EC3006A5EA9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = HSX7X97PF8;
+				INFOPLIST_FILE = ParseKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.danielbyon.ParseKit-tvOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 3.0;
+				TVOS_DEPLOYMENT_TARGET = 10.1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		65971B571E22F7D6003D0AEC /* Build configuration list for PBXProject "ParseKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65971B6F1E22F7D6003D0AEC /* Debug */,
+				65971B701E22F7D6003D0AEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		65971B711E22F7D6003D0AEC /* Build configuration list for PBXNativeTarget "ParseKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65971B721E22F7D6003D0AEC /* Debug */,
+				65971B731E22F7D6003D0AEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		65971B741E22F7D6003D0AEC /* Build configuration list for PBXNativeTarget "ParseKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65971B751E22F7D6003D0AEC /* Debug */,
+				65971B761E22F7D6003D0AEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		65FAA4031E4C6EC3006A5EA9 /* Build configuration list for PBXNativeTarget "ParseKit-tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65FAA3FF1E4C6EC3006A5EA9 /* Debug */,
+				65FAA4001E4C6EC3006A5EA9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		65FAA4041E4C6EC3006A5EA9 /* Build configuration list for PBXNativeTarget "ParseKit-tvOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65FAA4011E4C6EC3006A5EA9 /* Debug */,
+				65FAA4021E4C6EC3006A5EA9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 65971B541E22F7D6003D0AEC /* Project object */;
+}
