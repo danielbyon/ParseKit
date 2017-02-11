@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "65FAA3ED1E4C6EC3006A5EA9"
-               BuildableName = "ParseKit-tvOS.framework"
+               BuildableName = "ParseKit.framework"
                BlueprintName = "ParseKit-tvOS"
                ReferencedContainer = "container:ParseKit.xcodeproj">
             </BuildableReference>
@@ -43,7 +43,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "65FAA3ED1E4C6EC3006A5EA9"
-            BuildableName = "ParseKit-tvOS.framework"
+            BuildableName = "ParseKit.framework"
             BlueprintName = "ParseKit-tvOS"
             ReferencedContainer = "container:ParseKit.xcodeproj">
          </BuildableReference>
@@ -65,7 +65,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "65FAA3ED1E4C6EC3006A5EA9"
-            BuildableName = "ParseKit-tvOS.framework"
+            BuildableName = "ParseKit.framework"
             BlueprintName = "ParseKit-tvOS"
             ReferencedContainer = "container:ParseKit.xcodeproj">
          </BuildableReference>
@@ -83,7 +83,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "65FAA3ED1E4C6EC3006A5EA9"
-            BuildableName = "ParseKit-tvOS.framework"
+            BuildableName = "ParseKit.framework"
             BlueprintName = "ParseKit-tvOS"
             ReferencedContainer = "container:ParseKit.xcodeproj">
          </BuildableReference>
