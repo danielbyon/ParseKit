@@ -65,25 +65,25 @@ public extension NSDictionary {
     }
 
     public func parseOptional<T>(_ keyPath: String) throws -> T? {
-        guard let _ = value(forKeyPath: keyPath) else { return nil }
+        guard let value = value(forKeyPath: keyPath), !(value is NSNull) else { return nil }
         let parsed: T = try parse(keyPath)
         return parsed
     }
 
     public func parseOptional<T: Parsable>(_ keyPath: String) throws -> T? {
-        guard let _ = value(forKeyPath: keyPath) else { return nil }
+        guard let value = value(forKeyPath: keyPath), !(value is NSNull) else { return nil }
         let parsed: T = try parseParsable(keyPath)
         return parsed
     }
 
     public func parseOptional<T: Parsable>(_ keyPath: String) throws -> [T]? {
-        guard let _ = value(forKeyPath: keyPath) else { return nil }
+        guard let value = value(forKeyPath: keyPath), !(value is NSNull) else { return nil }
         let parsed: [T] = try parseParsableList(keyPath)
         return parsed
     }
 
     public func parseOptional<T: RawRepresentable>(_ keyPath: String) throws -> T? {
-        guard let _ = value(forKeyPath: keyPath) else { return nil }
+        guard let value = value(forKeyPath: keyPath), !(value is NSNull) else { return nil }
         let parsed: T = try parseEnum(keyPath)
         return parsed
     }
@@ -93,7 +93,7 @@ public extension NSDictionary {
     }
 
     public func parseOptional<T>(_ keyPath: String, parser: (Any) throws -> T) throws -> T? {
-        guard let value = value(forKeyPath: keyPath) else { return nil }
+        guard let value = value(forKeyPath: keyPath), !(value is NSNull) else { return nil }
         return try parser(value)
     }
 
@@ -190,37 +190,37 @@ public extension NSDictionary {
     }
 
     public func parseOptionalInt(_ keyPath: String) throws -> Int? {
-        guard let _ = value(forKeyPath: keyPath) else { return nil }
+        guard let value = value(forKeyPath: keyPath), !(value is NSNull) else { return nil }
         let parsed = try parseInt(keyPath)
         return parsed
     }
 
     public func parseOptionalString(_ keyPath: String) throws -> String? {
-        guard let _ = value(forKeyPath: keyPath) else { return nil }
+        guard let value = value(forKeyPath: keyPath), !(value is NSNull) else { return nil }
         let parsed = try parseString(keyPath)
         return parsed
     }
 
     public func parseOptionalDouble(_ keyPath: String) throws -> Double? {
-        guard let _ = value(forKeyPath: keyPath) else { return nil }
+        guard let value = value(forKeyPath: keyPath), !(value is NSNull) else { return nil }
         let parsed = try parseDouble(keyPath)
         return parsed
     }
 
     public func parseOptionalBool(_ keyPath: String) throws -> Bool? {
-        guard let _ = value(forKeyPath: keyPath) else { return nil }
+        guard let value = value(forKeyPath: keyPath), !(value is NSNull) else { return nil }
         let parsed = try parseBool(keyPath)
         return parsed
     }
 
     public func parseOptionalDate(_ keyPath: String, dateFormatter: DateFormatter? = nil) throws -> Date? {
-        guard let _ = value(forKeyPath: keyPath) else { return nil }
+        guard let value = value(forKeyPath: keyPath), !(value is NSNull) else { return nil }
         let parsed = try parseDate(keyPath, dateFormatter: dateFormatter)
         return parsed
     }
 
     public func parseOptionalEnum<T: RawRepresentable>(_ keyPath: String) throws -> T? {
-        guard let _ = value(forKeyPath: keyPath) else { return nil }
+        guard let value = value(forKeyPath: keyPath), !(value is NSNull) else { return nil }
         let parsed: T = try parseEnum(keyPath)
         return parsed
     }
@@ -234,13 +234,13 @@ public extension NSDictionary {
     }
 
     public func parseOptionalParsable<T: Parsable>(_ keyPath: String) throws -> T? {
-        guard let _ = value(forKeyPath: keyPath) else { return nil }
+        guard let value = value(forKeyPath: keyPath), !(value is NSNull) else { return nil }
         let parsed: T = try parseParsable(keyPath)
         return parsed
     }
 
     public func parseOptionalParsableList<T: Parsable>(_ keyPath: String) throws -> [T]? {
-        guard let _ = value(forKeyPath: keyPath) else { return nil }
+        guard let value = value(forKeyPath: keyPath), !(value is NSNull) else { return nil }
         let parsed: [T] = try parseParsableList(keyPath)
         return parsed
     }
