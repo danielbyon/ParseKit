@@ -284,9 +284,9 @@ private extension Bool {
 
     init?(fuzzyString: String) {
         switch fuzzyString.lowercased() {
-        case "true", "yes", "1":
+        case "true", "yes", "1", "y":
             self = true
-        case "false", "no", "0":
+        case "false", "no", "0", "n":
             self = false
         default:
             return nil
