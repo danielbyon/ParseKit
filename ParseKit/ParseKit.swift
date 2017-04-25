@@ -27,6 +27,7 @@ import Foundation
 
 private let _dateFormatter = DateFormatter()
 private let _8601DateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
+private let _validURLCharacters = CharacterSet.urlHostAllowed.union(.urlPathAllowed).union(.urlFragmentAllowed).union(.urlQueryAllowed)
 
 // MARK: - NSDictionary Extension
 public extension NSDictionary {
@@ -172,7 +173,8 @@ public extension NSDictionary {
 
     public func parseURL(_ keyPath: String) throws -> URL {
         let string = try parseString(keyPath)
-        guard let parsed = URL(string: string) else {
+        let sanitized = String(describing: string.unicodeScalars.filter { _validURLCharacters.contains($0) }.reduce("") { $0.0 + String(describing: $0.1) })
+        guard let parsed = URL(string: sanitized) else {
             throw ParseError.valueNotParseable(keyPath: keyPath, type: URL.self)
         }
         return parsed
@@ -227,7 +229,8 @@ public extension NSDictionary {
 
     public func parseOptionalURL(_ keyPath: String) throws -> URL? {
         guard let string = try parseOptionalString(keyPath) else { return nil }
-        guard let parsed = URL(string: string) else {
+        let sanitized = String(describing: string.unicodeScalars.filter { _validURLCharacters.contains($0) }.reduce("") { $0.0 + String(describing: $0.1) })
+        guard let parsed = URL(string: sanitized) else {
             throw ParseError.valueNotParseable(keyPath: keyPath, type: URL.self)
         }
         return parsed
