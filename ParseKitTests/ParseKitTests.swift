@@ -59,9 +59,9 @@ class ParseKitTests: XCTestCase {
         "invalidBool": 12.3,
         "invalidBoolString": "value",
         // Date
-        "validDate": "2017-02-08T12:15:00-0800",
+        "validDate": "2017-02-08T12:15:00-0000",
         "invalidDate": "value",
-        "validDateDifferentFormat": "02-08-2017 12:15",
+        "validDateDifferentFormat": "02-08-2017 12:15Z",
         // Enum
         "validStringEnum": "one",
         "invalidStringEnum": "value",
@@ -84,8 +84,8 @@ class ParseKitTests: XCTestCase {
         ]
         ])
 
-    let differentDateFormat = "MM-dd-yyyy HH:mm"
-    let validDate = Date(timeIntervalSince1970: 1486584900)
+    let differentDateFormat = "MM-dd-yyyy HH:mmZ"
+    let validDate = Date(timeIntervalSince1970: 1486556100)
     let invalidKeyPath = "someKeyThatDoesNotExist"
 
     // MARK: Tests
@@ -284,27 +284,23 @@ class ParseKitTests: XCTestCase {
         let keyPath = "invalidDouble"
         do {
             let _ = try json.parseDouble(keyPath)
-            XCTFail("Shouldn't get here")
         } catch {
-            // Success
+            XCTFail("Shouldn't get here")
         }
         do {
             let _: Double = try json.parse(keyPath)
-            XCTFail("Shouldn't get here")
         } catch {
-            // Success
+            XCTFail("Shouldn't get here")
         }
         do {
             let _ = try json.parseOptionalDouble(keyPath)
-            XCTFail("Shouldn't get here")
         } catch {
-            // Success
+            XCTFail("Shouldn't get here")
         }
         do {
             let _: Double? = try json.parseOptional(keyPath)
-            XCTFail("Shouldn't get here")
         } catch {
-            // Success
+            XCTFail("Shouldn't get here")
         }
     }
 
