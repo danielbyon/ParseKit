@@ -173,7 +173,12 @@ public extension NSDictionary {
 
     public func parseURL(_ keyPath: String) throws -> URL {
         let string = try parseString(keyPath)
-        let sanitized = String(describing: string.unicodeScalars.filter { _validURLCharacters.contains($0) }.reduce("") { $0.0 + String(describing: $0.1) }).folding(options: .diacriticInsensitive, locale: .current)
+        let sanitizedScalars = string.unicodeScalars.filter { _validURLCharacters.contains($0) }
+        var sanitized = ""
+        for scalar in sanitizedScalars {
+            sanitized += "\(scalar)"
+        }
+        sanitized = sanitized.folding(options: .diacriticInsensitive, locale: .current)
         guard let parsed = URL(string: sanitized) else {
             throw ParseError.valueNotParseable(keyPath: keyPath, type: URL.self)
         }
@@ -229,7 +234,12 @@ public extension NSDictionary {
 
     public func parseOptionalURL(_ keyPath: String) throws -> URL? {
         guard let string = try parseOptionalString(keyPath) else { return nil }
-        let sanitized = String(describing: string.unicodeScalars.filter { _validURLCharacters.contains($0) }.reduce("") { $0.0 + String(describing: $0.1) }).folding(options: .diacriticInsensitive, locale: .current)
+        let sanitizedScalars = string.unicodeScalars.filter { _validURLCharacters.contains($0) }
+        var sanitized = ""
+        for scalar in sanitizedScalars {
+            sanitized += "\(scalar)"
+        }
+        sanitized = sanitized.folding(options: .diacriticInsensitive, locale: .current)
         guard let parsed = URL(string: sanitized) else {
             throw ParseError.valueNotParseable(keyPath: keyPath, type: URL.self)
         }
